@@ -50,7 +50,7 @@
 
   async function select() {
     value = extract(results[selectedIndex].original);
-    dispatch("select", { selectedIndex, selected: value });
+    dispatch("select", { selectedIndex, selected: results[selectedIndex].original });
     await tick();
     searchRef.focus();
     hideDropdown = true;
